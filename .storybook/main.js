@@ -1,8 +1,7 @@
 /** @type {import('@storybook/core-common').StorybookConfig} */
 const config = {
   stories: [
-    '../stories/**/*.stories.mdx',
-    '../stories/**/*.stories.@(js|jsx|ts|tsx)',
+    '../src/**/*.stories.ts',
   ],
   addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
   framework: '@storybook/web-components',
