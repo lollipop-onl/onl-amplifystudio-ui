@@ -1,0 +1,9 @@
+{
+  "name": "onl-amplifystudio-ui",
+  "version": "1.0.0",
+  "author": "lollipop-onl <lollipop@simochee.net>",
+  "license": "MIT",
+  "main": "lib/components.js",
+  "private": true,
+  "repository": "git@github.com:lollipop-onl/onl-amplifystudio-ui.git"
+}
