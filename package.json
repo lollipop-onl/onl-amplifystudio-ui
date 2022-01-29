@@ -8,15 +8,17 @@
   "repository": "git@github.com:lollipop-onl/onl-amplifystudio-ui.git",
   "dependencies": {
     "@storybook/web-components": "^6.4.15",
-    "lit": "^2.1.2",
+    "prettier": "^2.5.1",
     "vite": "^2.7.13"
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "format": "prettier --write --ignore-path .gitignore \"**/*.{ts,js,css}\""
   },
   "devDependencies": {
     "@babel/core": "^7.16.12",
+    "lit": "^2.1.2",
     "@storybook/addon-actions": "^6.4.15",
     "@storybook/addon-essentials": "^6.4.15",
     "@storybook/addon-links": "^6.4.15",
