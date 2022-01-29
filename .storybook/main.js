@@ -4,7 +4,7 @@ const alias = require('@rollup/plugin-alias');
 /** @type {import('@storybook/core-common').StorybookConfig} */
 const config = {
   stories: [
-    '../src/**/*.stories.ts',
+    '../src/components/**/index.stories.ts',
   ],
   addons: [
     '@storybook/addon-links',
