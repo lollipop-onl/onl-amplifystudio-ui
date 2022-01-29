@@ -1,6 +1,10 @@
 {
   "extends": "@tsconfig/vite-react/tsconfig.json",
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["src/*"]
+    },
     "experimentalDecorators": true,
     "useDefineForClassFields": false
   }
