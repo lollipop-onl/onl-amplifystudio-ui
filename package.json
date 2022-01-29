@@ -7,16 +7,20 @@
   "private": true,
   "repository": "git@github.com:lollipop-onl/onl-amplifystudio-ui.git",
   "dependencies": {
-    "storybook-builder-vite": "^0.1.14",
+    "@storybook/web-components": "^6.4.15",
+    "lit": "^2.1.2",
     "vite": "^2.7.13"
   },
   "scripts": {
-    "storybook": "start-storybook",
-    "storybook:build": "build-storybook"
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "@storybook/addon-actions": "^6.4.15",
     "@storybook/addon-essentials": "^6.4.15",
     "@storybook/addon-links": "^6.4.15",
-    "storybook": "^6.4.15"
+    "babel-loader": "^8.2.3",
+    "storybook-builder-vite": "^0.1.14"
   }
 }
