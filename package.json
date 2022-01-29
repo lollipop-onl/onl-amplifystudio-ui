@@ -17,18 +17,22 @@
   "scripts": {
     "build": "vite build",
     "serve": "live-server dist --no-browser --cors --https=https.config.js",
+    "generate-custom-elements-manifest": "custom-elements-manifest analyze --litelement --globs \"src/components/**/*.ts\" --exclude \"**/*.stories.ts\"",
     "dev": "start-storybook --no-open -p 6006",
     "build-storybook": "build-storybook --output-dir dist",
     "lint:js": "eslint . --fix --ext .ts,.js --ignore-path .gitignore",
     "lint:css": "stylelint",
     "format": "prettier \"**/*.{ts,js,css}\" --write --ignore-path .gitignore"
   },
+  "customElements": "custom-elements.json",
   "devDependencies": {
     "@babel/core": "^7.16.12",
+    "@custom-elements-manifest/analyzer": "^0.5.7",
     "@rollup/plugin-alias": "^3.1.9",
     "@storybook/addon-actions": "^6.4.15",
     "@storybook/addon-essentials": "^6.4.15",
     "@storybook/addon-links": "^6.4.15",
+    "@storybook/eslint-config-storybook": "^3.1.2",
     "@tsconfig/vite-react": "^1.0.0",
     "@typescript-eslint/eslint-plugin": "^5.10.1",
     "@typescript-eslint/parser": "^5.10.1",

@@ -7,6 +7,7 @@ import styles from './onl-header.css?inline';
 export class OnlHeader extends LitElement {
   static styles = [unsafeCSS(common), unsafeCSS(styles)];
 
+  /** ユーザー名 */
   @property({ type: String }) name!: string;
 
   render() {

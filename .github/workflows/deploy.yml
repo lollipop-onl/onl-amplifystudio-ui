@@ -13,6 +13,8 @@ jobs:
           node-version: 16
       - name: Install dependencies
         run: yarn install --frozen-lockfile
+      - name: Generate custom-elements-manifest
+        run: yarn generate-custom-elements-manifest
       - name: Build catalog
         run: yarn build-storybook
       - name: Build sources

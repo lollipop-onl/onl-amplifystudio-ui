@@ -1,5 +1,8 @@
 ### https://raw.github.com/github/gitignore/752b7678db497edb377fa982ded0c70035393794/Node.gitignore
 
+# Custom Elements Manifest
+custom-elements.json
+
 # Certifications
 *.pem
 

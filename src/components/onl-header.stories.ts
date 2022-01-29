@@ -5,6 +5,7 @@ import './onl-header';
 
 export default {
   title: 'onl-header',
+  component: 'onl-header',
 } as Meta;
 
 const Template: Story<HTMLElementTagNameMap['onl-header']> = ({ name }) => html`<onl-header .name=${name}></onl-header>`;
