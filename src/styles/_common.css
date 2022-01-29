@@ -1,1 +1,17 @@
-@import 'reset-css';
+@import 'modern-normalize';
+
+ul, ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  color: inherit;
+  border: 0;
+  background: transparent;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+}

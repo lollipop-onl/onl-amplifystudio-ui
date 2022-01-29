@@ -1,8 +1,48 @@
-.foo {}
+.onlNavbar {
+  display: flex;
+  align-items: center;
+  padding: 24px 32px;
 
-div {
-  & p {
+  & > .logo {
+    transition: opacity var(--animation-medium) ease;
+  }
+
+  & > .logo:hover {
+    opacity: 0.4;
+  }
+
+  & > .menu {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+
+  & > .menu > .item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  & > .menu > .item > .link {
+    font-family: var(--font-alphabet);
+    font-size: var(--font-body);
+    color: var(--color-text-body);
+    text-decoration: none;
+    transition: opacity var(--animation-medium) ease;
+  }
+
+  & > .menu > .item > .link:disabled {
     text-decoration: underline;
-    line-clamp: 3;
+  }
+
+  & > .menu > .item > .link:not(:disabled):hover {
+    opacity: 0.4;
+  }
+
+  & > .avatar {
+    display: block;
+    width: 45px;
+    height: 45px;
+    margin-left: auto;
+    border-radius: 50%;
+    object-fit: cover;
   }
 }

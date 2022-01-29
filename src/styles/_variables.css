@@ -1,5 +1,15 @@
 :root {
+  /* 色 */
+  --color-text-body: #000;
+
+  /* フォント */
   --font-primary: 'Kiwi Maru', serif;
+  --font-alphabet: 'Inter', serif;
+  --font-body: 16px/1.5;
+  --font-body-large: 16
   --font-regular: 300;
   --font-bold: 500;
+
+  /* アニメーション */
+  --animation-medium: 0.12s;
 }
