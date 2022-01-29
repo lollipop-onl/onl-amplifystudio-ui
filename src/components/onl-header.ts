@@ -1,10 +1,11 @@
 import { LitElement, html, css, unsafeCSS } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
+import common from '~/styles/common.css?inline';
 import styles from './onl-header.css?inline';
 
 @customElement('onl-header')
 export class OnlHeader extends LitElement {
-  static styles = unsafeCSS(styles);
+  static styles = [unsafeCSS(common), unsafeCSS(styles)];
 
   @property({ type: String }) name!: string;
 

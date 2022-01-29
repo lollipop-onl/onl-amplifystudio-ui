@@ -1,15 +1,26 @@
+import path from 'path';
 import { defineConfig } from 'vite';
+import alias from '@rollup/plugin-alias';
 
 export default defineConfig({
   build: {
     lib: {
       name: 'components',
       entry: 'src/components.ts',
+      formats: ['umd'],
     },
     rollupOptions: {
       output: {
-        entryFileNames: '[name].[format].js',
-      }
+        entryFileNames: '[name].js',
+        assetFileNames: '[name][extname]'
+      },
+      plugins: [
+        alias({
+          entries: {
+            '~': path.join(__dirname, 'src'),
+          }
+        })
+      ]
     },
   },
 })
