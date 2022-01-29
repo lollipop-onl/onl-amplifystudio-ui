@@ -1,0 +1,6 @@
+@import '_common';
+
+:host {
+  font-family: var(--font-primary);
+  font-weight: var(--font-regular);
+}
