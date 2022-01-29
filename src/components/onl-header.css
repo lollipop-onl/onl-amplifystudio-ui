@@ -1,0 +1,7 @@
+.foo {}
+
+div {
+  & p {
+    text-decoration: underline;
+  }
+}
