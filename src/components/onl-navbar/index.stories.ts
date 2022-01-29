@@ -19,5 +19,5 @@ const Template: Story<HTMLElementTagNameMap['onl-navbar']> = ({ avatar }) => htm
 export const Primary = Template.bind({});
 
 Primary.args = {
-  avatar: 'https://picsum.photos/300/300',
+  avatar: 'https://picsum.photos/seed/useravatar/300/300',
 }
