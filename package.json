@@ -5,5 +5,18 @@
   "license": "MIT",
   "main": "lib/components.js",
   "private": true,
-  "repository": "git@github.com:lollipop-onl/onl-amplifystudio-ui.git"
+  "repository": "git@github.com:lollipop-onl/onl-amplifystudio-ui.git",
+  "dependencies": {
+    "storybook-builder-vite": "^0.1.14",
+    "vite": "^2.7.13"
+  },
+  "scripts": {
+    "storybook": "start-storybook",
+    "storybook:build": "build-storybook"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^6.4.15",
+    "@storybook/addon-links": "^6.4.15",
+    "storybook": "^6.4.15"
+  }
 }
