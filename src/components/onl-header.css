@@ -3,5 +3,6 @@
 div {
   & p {
     text-decoration: underline;
+    line-clamp: 3;
   }
 }

@@ -1,5 +1,8 @@
 ### https://raw.github.com/github/gitignore/752b7678db497edb377fa982ded0c70035393794/Node.gitignore
 
+# Certifications
+*.pem
+
 # Logs
 logs
 *.log
