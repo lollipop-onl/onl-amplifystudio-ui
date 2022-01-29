@@ -1,0 +1,33 @@
+.siteFooter {
+  margin-top: 64px;
+  background: var(--color-background-footer);
+  padding: 120px 32px 40px;
+  display: flex;
+  align-items: flex-end;
+
+  & > .menu {
+    display: flex;
+    align-items: center;
+  }
+
+  & > .menu > .item:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  & > .menu > .item > .link {
+    color: var(--color-text-inverse);
+    text-decoration: underline;
+  }
+
+  & > .menu > .item > .link:hover {
+    text-decoration: none;
+  }
+
+  & > .copyright {
+    margin-left: auto;
+    color: var(--color-text-inverse);
+    font-size: var(--font-body-small);
+    font-family: var(--font-inter);
+    opacity: 0.7;
+  }
+}

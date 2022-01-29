@@ -1,2 +1,12 @@
 @import '_variables';
 @import '_common';
+
+@import 'components/_siteFooter';
+@import 'components/_pickupFeatures';
+@import 'components/_pickupGallery';
+
+body {
+  font-size: var(--font-body);
+  font-family: var(--font-primary);
+  font-weight: var(--font-regular);
+}

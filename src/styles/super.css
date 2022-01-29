@@ -1,6 +1,7 @@
 @import '_common';
 
 :host {
+  font-size: var(--font-body);
   font-family: var(--font-primary);
   font-weight: var(--font-regular);
 }

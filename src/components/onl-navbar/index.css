@@ -23,8 +23,8 @@
 
   & > .menu > .item > .link {
     font-family: var(--font-alphabet);
-    font-size: var(--font-body);
-    color: var(--color-text-body);
+    font: var(--font-body);
+    color: var(--color-text-primary);
     text-decoration: none;
     transition: opacity var(--animation-medium) ease;
   }

@@ -1,11 +1,10 @@
 .swiperContainer {
-  overflow: hidden;
-  position: relative;
   width: 100%;
   aspect-ratio: 1440 / 858;
+}
 
-  & img {
-    display: block;
+.swiperSlide {
+  & > .image {
     width: 100%;
     height: 100%;
     object-fit: cover;

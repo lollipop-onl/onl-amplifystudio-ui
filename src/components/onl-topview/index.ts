@@ -1,12 +1,13 @@
-import { LitElement, html, css, unsafeCSS } from 'lit';
+import { LitElement, html, unsafeCSS } from 'lit';
 import { customElement, property, state, query } from 'lit/decorators.js';
 import Swiper, { Pagination, Autoplay } from 'swiper';
+// モジュールの仕組み上 swiper/css だとモジュールを解決してくれなかった
 // @ts-expect-error
-import swiperCss from 'swiper/css';
+import swiperCss from '../../../node_modules/swiper/swiper.min.css';
 // @ts-expect-error
-import swiperPaginationCss from 'swiper/css/pagination';
+import swiperPaginationCss from '../../../node_modules/swiper/modules/pagination/pagination.min.css';
 // @ts-expect-error
-import swiperAutoplayCss from 'swiper/css/autoplay';
+import swiperAutoplayCss from '../../../node_modules/swiper/modules/autoplay/autoplay.min.css';
 import superStyles from '~/styles/super.css?inline';
 import styles from './index.css?inline';
 
@@ -14,8 +15,6 @@ type TopViewItem = {
   image: string;
   alt?: string;
 };
-
-console.log(swiperCss)
 
 @customElement('onl-topview')
 export class OnlTopview extends LitElement {
@@ -32,11 +31,15 @@ export class OnlTopview extends LitElement {
 
   @state() swiper: Swiper | undefined;
 
-  @query('.swiperContainer') swiperContainer: HTMLDivElement | undefined;
+  @query('.swiper') swiperContainer: HTMLDivElement | undefined;
+  @query('.swiper-navigation-next') swiperNavigationNext: HTMLDivElement | undefined;
+  @query('.swiper-navigation-prev') swiperNavigationPrev: HTMLDivElement | undefined;
   @query('.swiper-pagination') swiperPagination: HTMLDivElement | undefined;
 
   disconnectedCallback(): void {
     super.disconnectedCallback();
+
+    this.swiper?.destroy(true, true);
   }
 
   protected firstUpdated(): void {
@@ -59,12 +62,12 @@ export class OnlTopview extends LitElement {
 
   render() {
     return html`
-      <div class="swiperContainer">
+      <div class="swiper swiperContainer">
         <div class="swiper-wrapper">
           ${this.topviews.map(
             ({ image, alt = '' }) => html`
-              <div class="swiper-slide">
-                <img src=${image} alt=${alt} />
+              <div class="swiper-slide swiperSlide">
+                <img class="image" src=${image} alt=${alt} />
               </div>
             `
           )}

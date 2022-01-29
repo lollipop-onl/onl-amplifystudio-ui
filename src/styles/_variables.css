@@ -1,14 +1,23 @@
 :root {
   /* 色 */
-  --color-text-body: #000;
+  --color-text-primary: #000;
+  --color-text-inverse: #fff;
+  --color-background-tertiary: #EFF0F0;
+  --color-background-footer: #000;
+
+  /** サイズ */
+  --width-container: 1160px;
 
   /* フォント */
-  --font-primary: 'Kiwi Maru', serif;
-  --font-alphabet: 'Inter', serif;
-  --font-body: 16px/1.5;
+  --font-primary: 'Inter', 'Noto Sans JP', sans-serif;;
+  --font-alphabet: 'Inter', sans-serif;
+  --font-body: 16px;
+  --font-body-small: 14px;
+  --font-h5: 32px;
+  --font-h4: 40px;
   --font-body-large: 16
   --font-regular: 300;
-  --font-bold: 500;
+  --font-bold: 600;
 
   /* アニメーション */
   --animation-medium: 0.12s;
