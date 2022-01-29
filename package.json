@@ -18,7 +18,7 @@
     "build": "vite build",
     "serve": "live-server dist --no-browser --cors --https=https.config.js",
     "dev": "start-storybook --no-open -p 6006",
-    "build-storybook": "build-storybook --output-dir dist/catalog",
+    "build-storybook": "build-storybook --output-dir dist",
     "lint:js": "eslint . --fix --ext .ts,.js --ignore-path .gitignore",
     "lint:css": "stylelint",
     "format": "prettier \"**/*.{ts,js,css}\" --write --ignore-path .gitignore"

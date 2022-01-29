@@ -9,6 +9,7 @@ export default defineConfig({
       entry: 'src/components.ts',
       formats: ['umd'],
     },
+    outDir: 'dist/lib',
     rollupOptions: {
       output: {
         entryFileNames: '[name].js',
