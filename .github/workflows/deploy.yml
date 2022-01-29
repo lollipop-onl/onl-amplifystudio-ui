@@ -13,10 +13,10 @@ jobs:
           node-version: 16
       - name: Install dependencies
         run: yarn install --frozen-lockfile
-      - name: Build sources
-        run: yarn build
       - name: Build catalog
         run: yarn build-storybook
+      - name: Build sources
+        run: yarn build
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
