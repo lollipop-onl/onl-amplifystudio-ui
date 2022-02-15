@@ -46,6 +46,7 @@ export class OnlNavbar extends LitElement {
               .src=${this.avatar}
               width="45"
               height="45"
+              loading="lazy"
             />`
           : null}
       </header>

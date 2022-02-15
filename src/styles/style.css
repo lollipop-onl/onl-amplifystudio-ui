@@ -4,8 +4,10 @@
 @import 'components/_siteFooter';
 @import 'components/_pickupFeatures';
 @import 'components/_pickupGallery';
+@import 'components/_galleryContainer';
 
 body {
+  padding-top: 100px;
   font-size: var(--font-body);
   font-family: var(--font-primary);
   font-weight: var(--font-regular);

@@ -1,0 +1,5 @@
+.galleryContainer {
+  padding: 32px 16px 0;
+  max-width: var(--width-container);
+  margin: 0 auto;
+}

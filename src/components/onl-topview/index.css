@@ -1,6 +1,6 @@
 .swiperContainer {
   width: 100%;
-  aspect-ratio: 1440 / 858;
+  height: calc(100vh - 100px);
 }
 
 .swiperSlide {

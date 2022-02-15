@@ -1,7 +1,18 @@
+:host {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 2;
+}
+
 .onlNavbar {
+  background: var(--color-background-inverse);
   display: flex;
   align-items: center;
-  padding: 24px 32px;
+  height: 100px;
+  padding: 0 32px;
 
   & > .logo {
     transition: opacity var(--animation-medium) ease;
